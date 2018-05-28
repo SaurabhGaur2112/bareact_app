@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gaursaurabh.bareact.Compare">
+
+    <LinearLayout
+        android:id="@+id/compareFirstLayout"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="50%"
+        android:orientation="vertical"
+        android:background="#000000"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/title_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/title_first"
+                    android:background="#ffffff"
+                    android:minHeight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/desc_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        />
+
+                    <View
+                        android:id="@+id/line_first"
+                        android:layout_width="200dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:visibility="gone"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:id="@+id/footnote_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/compareSecondLayout"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="50%"
+        android:layout_below="@id/compareFirstLayout"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:layout_marginTop="5dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/title_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/title_second"
+                    android:background="#ffffff"
+                    android:minHeight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/desc_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        />
+
+                    <View
+                        android:id="@+id/line_second"
+                        android:layout_width="200dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:visibility="gone"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:id="@+id/footnote_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>

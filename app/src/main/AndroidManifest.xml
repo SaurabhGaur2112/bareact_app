@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gaursaurabh.bareact">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".NetworkConnection.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/act1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/act1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BareAct"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Favourite"
+            android:label="@string/title_favourite"
+            android:parentActivityName=".Favourite">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Favourite" />
+        </activity>
+        <activity android:name=".WelcomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".NetworkConnection.InternetConnector_Receiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Intent filters for broadcast receiver -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Compare"
+            android:label="@string/title_compare"
+            android:parentActivityName=".Compare">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Compare" />
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_aboutus"
+            android:parentActivityName=".AboutUs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AboutUs" />
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_contactus"
+            android:parentActivityName=".ContactUs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ContactUs" />
+        </activity>
+        <activity
+            android:name=".Chapters"
+            android:label="@string/title_chapters"
+            android:parentActivityName=".Chapters">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Chapters" />
+        </activity>
+        <activity
+            android:name=".Section"
+            android:label="@string/title_section"
+            android:parentActivityName=".Section">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Section" />
+        </activity>
+        <activity
+            android:name=".SectionDesc"
+            android:label="@string/title_section"
+            android:parentActivityName=".SectionDesc">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionDesc" />
+        </activity>
+        <activity
+            android:name=".CompareBareAct"
+            android:label="@string/title_compare_bareact"
+            android:parentActivityName=".CompareBareAct">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompareBareAct" />
+        </activity>
+        <activity
+            android:name=".CompareChapter"
+            android:label="@string/title_compare_contact"
+            android:parentActivityName=".CompareChapter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompareChapter" />
+        </activity>
+        <activity
+            android:name=".CompareSection"
+            android:label="@string/title_compare_section"
+            android:parentActivityName=".CompareSection">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompareSection" />
+        </activity>
+    </application>
+
+</manifest>
